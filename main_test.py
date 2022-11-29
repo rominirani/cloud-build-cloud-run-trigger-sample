@@ -27,7 +27,7 @@ def client():
 def test_handler_no_env_variable(client):
     r = client.get("/")
 
-    assert r.data.decode() == "Hello Cloud Build!"
+    assert r.data.decode() == "Hello Cloud Platform!"
     assert r.status_code == 200
 
 
