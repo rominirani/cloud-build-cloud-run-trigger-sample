@@ -23,7 +23,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():
     name = os.environ.get("NAME", "Cloud Platform")
-    return f"Hey {name}!"
+    return f"Hello {name}!"
 
 
 if __name__ == "__main__":
