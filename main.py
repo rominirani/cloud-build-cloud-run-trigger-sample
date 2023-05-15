@@ -22,7 +22,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    name = os.environ.get("NAME", "Cloud Platform")
+    name = os.environ.get("NAME", "Google Cloud Platform")
     return f"Hey {name}!"
 
 
