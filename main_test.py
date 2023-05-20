@@ -27,7 +27,7 @@ def client():
 def test_handler_no_env_variable(client):
     r = client.get("/")
 
-    assert r.data.decode() == "Hey CCD Indore 2023!"
+    assert r.data.decode() == "Hey CCD Indore!"
     assert r.status_code == 200
 
 
